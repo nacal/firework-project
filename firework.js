@@ -12,6 +12,13 @@ let positionY;
 let fireworkColorMain;
 let fireworkColorSub;
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 const GeneratePositionY = () => {
   const minY = 10;
   const maxY = 75;
@@ -85,7 +92,7 @@ const makeCircle = (delay) => {
     scale: { 0: 1 },
     top: positionY,
     left: positionX,
-    stroke: fireworkColorMain,
+    stroke: { fireworkColorSub: fireworkColorMain },
     strokeWidth: 3,
     duration: 300,
     delay: 1200 + delay,
@@ -93,7 +100,7 @@ const makeCircle = (delay) => {
   }).then({
     scale: 2,
     strokeWidth: 0,
-    stroke: fireworkColorSub,
+
   });
 
   return circle;
@@ -102,8 +109,8 @@ const makeCircle = (delay) => {
 const makeBursts = (delay) => {
   const STAGGER = mojs.stagger(mojs.Burst);
   const bursts = new STAGGER({
-    radius: [80, 'rand(80, 120)', 'rand(80, 140)', 'rand(80, 160)'],
-    angle: ['rand(30, 180)'],
+    radius: [80, 'rand(80, 100)', 'rand(80,120)', 'rand(80, 140)'],
+    angle: ['rand(0, 180)'],
     top: positionY,
     left: positionX,
     quantifier: randomNumber(2, 4),
@@ -153,9 +160,7 @@ const makeFirework = () => {
         .tune({
           top: positionY,
           left: positionX,
-          stroke: fireworkColorMain,
-        }).then({
-          stroke: fireworkColorSub,
+          stroke: { fireworkColorSub: fireworkColorMain },
         })
       bursts
         .tune({
