@@ -19,6 +19,10 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+window.addEventListener('touchmove', (event) => {
+  event.preventDefault();
+}, { passive: false });
+
 const GeneratePositionY = () => {
   const minY = 10;
   const maxY = 75;
