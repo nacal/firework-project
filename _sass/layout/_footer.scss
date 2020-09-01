@@ -4,6 +4,8 @@
 -----------------------------------------------------*/
 
 .l-footer {
-  @include mq(tab) {
-  }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
 }
