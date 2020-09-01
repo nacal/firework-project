@@ -13,7 +13,7 @@ $slim-content-width: 960px !default;
 // ブレークポイント
 $breakpoints: (
   'sp': 480px,
-  'tab': 768px,
+  'tab': 830px,
   'lap': 1024px,
   'desk': 1200px,
 ) !default;
@@ -24,7 +24,7 @@ $breakpoints: (
 //====================================
 
 // ベースカラー
-$base-color: #dedede;
+$base-color: #fff;
 
 // メインカラー
 $main-color: #101010;
@@ -36,7 +36,7 @@ $sub-color: $md-blue-grey-500;
 $accent-color: $md-amber-500;
 
 // テキストの色
-$primary-text-color: #dedede;
+$primary-text-color: #fff;
 
 // セカンダリーカラー
 $secondary-text-color: $md-blue-grey-500;
@@ -45,10 +45,11 @@ $secondary-text-color: $md-blue-grey-500;
 $hint-text-color: $md-blue-grey-300;
 
 // リンクカラー
-$link-text-color: $md-cyan-500;
+$link-text-color: #212121;
 
 // ロールオーバーーカラー
-$hover-text-color: $md-cyan-300;
+$hover-text-color: #dedede;
+$hover-bg-color: #212121;
 
 //====================================
 //  Typeface

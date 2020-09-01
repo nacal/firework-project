@@ -87,7 +87,7 @@ body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   background-color: #101010;
-  color: #dedede;
+  color: #fff;
   text-rendering: optimizeLegibility;
   word-break: break-all;
   font: 1rem/1.5 Quicksand, "Noto Sans Japanese", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
@@ -102,9 +102,12 @@ img {
 }
 
 a {
-  display: block;
   color: inherit;
   text-decoration: none;
+}
+
+*[lang='en'] {
+  font-family: "Roboto Mono", monospace;
 }
 
 /* =====================================================
@@ -116,7 +119,7 @@ a {
 .l-container {
   position: relative;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 85%;
   width: 1200px;
   height: 100%;
 }
@@ -128,13 +131,19 @@ a {
 /*
   Header
 -----------------------------------------------------*/
+.l-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding-top: 2rem;
+  width: 100%;
+}
+
 /*
   Main
 -----------------------------------------------------*/
 .l-main {
-  position: relative;
   overflow: hidden;
-  margin: 0;
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -147,6 +156,7 @@ a {
 .l-footer {
   position: absolute;
   bottom: 0;
+  z-index: 1;
   width: 100%;
   height: 3rem;
 }
@@ -369,6 +379,103 @@ a {
   3.2 - Project
 -----------------------------------------------------*/
 /*
+  Header Title
+-----------------------------------------------------*/
+.p-headerTitle {
+  margin: 0 auto;
+  max-width: 75%;
+  width: 360px;
+}
+
+.p-headerTitle--logo {
+  width: 100%;
+}
+
+.p-headerTitle--text {
+  text-align-last: justify;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .p-headerTitle--text {
+    font-size: 2rem;
+  }
+}
+
+.p-headerTitle--creater {
+  padding-top: .5rem;
+  text-align: center;
+}
+
+/*
+  Introduction
+-----------------------------------------------------*/
+.p-introduction {
+  z-index: 1;
+  padding-top: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.p-introduction--title {
+  font-weight: bold;
+}
+
+.p-introduction--text {
+  margin: 0 auto;
+  padding: 1rem 0 3rem 0;
+  max-width: 100%;
+  width: 720px;
+  text-align: justify;
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 480px) {
+  .p-introduction--text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .p-introduction--text {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.p-introduction--link {
+  font-weight: bold;
+  -webkit-transition: all 300ms 0s ease;
+  transition: all 300ms 0s ease;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.p-introduction--link:hover {
+  color: #dedede;
+}
+
+/*
+  Link Button
+-----------------------------------------------------*/
+.p-linkButton {
+  display: inline;
+  padding: .5rem 1rem;
+  border: 1px solid #fff;
+  -webkit-transition: all 500ms 0s ease;
+  transition: all 500ms 0s ease;
+}
+
+.p-linkButton--icon {
+  padding-right: 1rem;
+}
+
+.p-linkButton:hover {
+  background-color: #212121;
+}
+
+/*
   3.2 - Utility
 -----------------------------------------------------*/
 /*
@@ -422,7 +529,7 @@ a {
   margin-bottom: 2.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 830px) {
   .u-mt--tab--0 {
     margin-top: 0;
   }
@@ -581,4 +688,42 @@ a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+/*
+  Fade In
+*/
+.u-fadeIn {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.u-fadeIn._fast {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.u-fadeIn._slow {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }

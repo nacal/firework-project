@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+/*
+  Header Title
+-----------------------------------------------------*/
+
+.p-headerTitle {
+  margin: 0 auto;
+  max-width: 75%;
+  width: 360px;
+
+  &--logo {
+    width: 100%;
+  }
+
+  &--text {
+    text-align-last: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    @include mq(sp) {
+      font-size: 2rem;
+    }
+  }
+
+  &--creater {
+    padding-top: .5rem;
+    text-align: center;
+  }
+}

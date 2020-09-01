@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+/*
+  Fade In
+*/
+
+.u-fadeIn {
+  animation-name: fadein;
+  animation-duration: 3s;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &._fast {
+    animation-duration: 1s;
+  }
+
+  &._slow {
+    animation-duration: 5s;
+  }
+}

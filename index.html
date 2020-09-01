@@ -4,18 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HANABI</title>
-  <link rel="stylesheet" href="./css/common.css" defer>
-
+  <link rel="stylesheet" href="./assets/style/css/common.css" defer>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700%7CRoboto+Mono:300,400,700&amp;subset=japanese">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="l-header"></header>
-  <main class="l-main"></main>
-  <footer class="l-footer">
+  <header class="l-header u-fadeIn">
+    <h1 class="p-headerTitle">
+      <span class="u-screenReaderText" lang="en">Shibajuku Online Hanabi <time>2020</time></span>
+      <a href="https://projects.shibajuku.net/fireworks/2020/">
+        <img class="p-headerTitle--logo" src="./assets/images/shibajuku-logo.png" srcset="./assets/images/shibajuku-logo.png, ./assets/images/shibajuku-logo@2x.png 2x" alt="Shibajukuのロゴ">
+        <p class="u-uppercase p-headerTitle--text" lang="en">Online Hanabi <time>2020</time></p>
+      </a>
+      <p class="p-headerTitle--creater" lang="en">created by Hikaru Nakata.</p>
+    </h1>
+  </header>
+  <main class="l-main l-container">
+    <section class="p-introduction u-centaring u-fadeIn _slow">
+      <h2 class="p-introduction--title u-uppercase" lang="en">Introduction</h2>
+      <p class="p-introduction--text">モーショングラフィックスを実装できるJSライブラリ<a class="p-introduction--link" href="https://mojs.github.io/" target="_blank" rel="noopener noreferrer">mo.js</a>を利用して2Dの花火を作成しました。大きさや色、形などランダムで色々な花火が打ち上がるのでぜひゆっくり鑑賞してください。</p>
+      <p class="p-introduction--button p-linkButton" lang="en"><a href="https://github.com/nkthkr/firework-project"><i class="fa fa-github p-linkButton--icon"></i>View Code</a></p>
+    </section>
+  </main>
+  <footer class="l-footer u-fadeIn">
     <article class="c-flex -jc-c -ai-c c-copyright">
-      <small>&copy; 2020 Hikaru Nakata</small>
+      <small lang="en">&copy; 2020 Hikaru Nakata</small>
     </article>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
-  <script src="./firework.js"></script>
+  <script src="./assets/js/firework.js"></script>
 </body>
 </html>

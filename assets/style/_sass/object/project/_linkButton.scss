@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+/*
+  Link Button
+-----------------------------------------------------*/
+
+.p-linkButton {
+  display: inline;
+  padding: .5rem 1rem;
+  border: 1px solid $primary-text-color;
+  transition: all 500ms 0s ease;
+
+  &--icon {
+    padding-right: 1rem;
+  }
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}
