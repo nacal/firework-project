@@ -1,0 +1,182 @@
+@charset 'UTF-8';
+//====================================
+//  Margin
+//====================================
+
+/*
+  Margin
+*/
+.u-mt--sp {
+  &--0 {
+    margin-top: 0;
+  }
+  &--xsmall {
+    margin-top: .5em;
+  }
+  &--small {
+    margin-top: 1em;
+  }
+  &--medium {
+    margin-top: 1.5em;
+  }
+  &--large {
+    margin-top: 2em;
+  }
+  &--xlarge {
+    margin-top: 2.5em;
+  }
+}
+
+.u-mb--sp {
+  &--0 {
+    margin-bottom: 0;
+  }
+  &--xsmall {
+    margin-bottom: .5em;
+  }
+  &--small {
+    margin-bottom: 1em;
+  }
+  &--medium {
+    margin-bottom: 1.5em;
+  }
+  &--large {
+    margin-bottom: 2em;
+  }
+  &--xlarge {
+    margin-bottom: 2.5em;
+  }
+}
+
+
+@include mq(tab) {
+  .u-mt--tab {
+    &--0 {
+      margin-top: 0;
+    }
+    &--xsmall {
+      margin-top: .5em;
+    }
+    &--small {
+      margin-top: 1em;
+    }
+    &--medium {
+      margin-top: 1.5em;
+    }
+    &--large {
+      margin-top: 2em;
+    }
+    &--xlarge {
+      margin-top: 2.5em;
+    }
+  }
+
+  .u-mb--tab {
+    &--0 {
+      margin-bottom: 0;
+    }
+    &--xsmall {
+      margin-bottom: .5em;
+    }
+    &--small {
+      margin-bottom: 1em;
+    }
+    &--medium {
+      margin-bottom: 1.5em;
+    }
+    &--large {
+      margin-bottom: 2em;
+    }
+    &--xlarge {
+      margin-bottom: 2.5em;
+    }
+  }
+}
+
+@include mq(lap) {
+  .u-mt--lap {
+    &--0 {
+      margin-top: 0;
+    }
+    &--xsmall {
+      margin-top: .5em;
+    }
+    &--small {
+      margin-top: 1em;
+    }
+    &--medium {
+      margin-top: 1.5em;
+    }
+    &--large {
+      margin-top: 2em;
+    }
+    &--xlarge {
+      margin-top: 2.5em;
+    }
+  }
+
+  .u-mb--lap {
+    &--0 {
+      margin-bottom: 0;
+    }
+    &--xsmall {
+      margin-bottom: .5em;
+    }
+    &--small {
+      margin-bottom: 1em;
+    }
+    &--medium {
+      margin-bottom: 1.5em;
+    }
+    &--large {
+      margin-bottom: 2em;
+    }
+    &--xlarge {
+      margin-bottom: 2.5em;
+    }
+  }
+}
+
+@include mq(desk) {
+  .u-mt--desk {
+    &--0 {
+      margin-top: 0;
+    }
+    &--xsmall {
+      margin-top: .5em;
+    }
+    &--small {
+      margin-top: 1em;
+    }
+    &--medium {
+      margin-top: 1.5em;
+    }
+    &--large {
+      margin-top: 2em;
+    }
+    &--xlarge {
+      margin-top: 2.5em;
+    }
+  }
+
+  .u-mb--desk {
+    &--0 {
+      margin-bottom: 0;
+    }
+    &--xsmall {
+      margin-bottom: .5em;
+    }
+    &--small {
+      margin-bottom: 1em;
+    }
+    &--medium {
+      margin-bottom: 1.5em;
+    }
+    &--large {
+      margin-bottom: 2em;
+    }
+    &--xlarge {
+      margin-bottom: 2.5em;
+    }
+  }
+}

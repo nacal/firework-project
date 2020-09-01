@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+/*
+  Base
+-----------------------------------------------------*/
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-size: $base-font-size;
+}
+
+body {
+  height: 100%;
+  background-color: $main-color;
+  color: $primary-text-color;
+  text-rendering: optimizeLegibility;
+  word-break: break-all;
+  font: #{set-size($base-font-size)}/1.5  $font-set-primary;
+  -webkit-font-feature-settings: 'pkna';
+          font-feature-settings: 'pkna';
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}

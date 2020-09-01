@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+@import 'color-book';
+
+
+// -----------------------------------
+//  Layout Settings
+//------------------------------------
+
+// Contentの幅
+$content-width: 1200px !default;
+$slim-content-width: 960px !default;
+
+// ブレークポイント
+$breakpoints: (
+  'sp': 480px,
+  'tab': 768px,
+  'lap': 1024px,
+  'desk': 1200px,
+) !default;
+
+
+//====================================
+//  Color Setings
+//====================================
+
+// ベースカラー
+// $base-color: $md-blue-grey-50;
+
+// メインカラー
+// $main-color: $md-blue-grey-900;
+
+// サブカラー
+// $sub-color: $md-blue-grey-500;
+
+//　アクセントカラー
+// $accent-color: $md-amber-500;
+
+// テキストの色
+// $primary-text-color: $md-blue-grey-900;
+
+// セカンダリーカラー
+// $secondary-text-color: $md-blue-grey-500;
+
+// 補足などの色
+// $hint-text-color: $md-blue-grey-300;
+
+// リンクカラー
+// $link-text-color: $md-cyan-500;
+
+// ロールオーバーーカラー
+// $hover-text-color: $md-cyan-300;
+
+//====================================
+//  Typeface
+//====================================
+
+//$font-set-primary : set-font-family(1) !default;
+$font-set-primary: Quicksand, 'Noto Sans Japanese', '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , 'YuGothic' , 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'Meiryo UI' , 'メイリオ' , Meiryo , sans-serif;
+$font-set-en: 'Roboto Mono', monospace;
+//  HTML用
+//  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Quicksand:400,700&display=swap&subset=japanese">
+
+$base-font-size: 16px;

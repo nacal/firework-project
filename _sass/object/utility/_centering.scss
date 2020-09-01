@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+//====================================
+//  Centaring
+//====================================
+
+.u-centaring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  &--lr {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

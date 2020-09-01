@@ -1,8 +1,9 @@
-html {
-  overflow: auto;
-}
+@charset 'UTF-8';
+/*
+  Main
+-----------------------------------------------------*/
 
-body {
+.l-main {
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -12,7 +13,4 @@ body {
   background-color: #101010;
 
   overscroll-behavior-y: none;
-}
-svg {
-  overflow: hidden;
 }

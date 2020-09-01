@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+/*
+  Centering
+-----------------------------------------------------*/
+
+.l-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90%;
+  width: $content-width;
+  height: 100%;
+
+  &.-slim {
+    max-width: $slim-content-width;
+  }
+}
