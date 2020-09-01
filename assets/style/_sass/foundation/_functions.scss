@@ -2,3 +2,8 @@
 @function set-size($size, $base-font-size: 16px) {
   @return ($size / $base-font-size) + rem;
 }
+
+@function get_vw($size, $viewport: 320) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}

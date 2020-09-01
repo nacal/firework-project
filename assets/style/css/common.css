@@ -158,7 +158,7 @@ a {
   bottom: 0;
   z-index: 1;
   width: 100%;
-  height: 3rem;
+  height: 2.25rem;
 }
 
 /* =====================================================
@@ -373,6 +373,7 @@ a {
 -----------------------------------------------------*/
 .c-copyright {
   height: 100%;
+  font-size: .75rem;
 }
 
 /*
@@ -396,7 +397,8 @@ a {
   text-align-last: justify;
   text-justify: inter-ideograph;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-size: 6.875vw;
 }
 
 @media screen and (min-width: 480px) {
@@ -408,6 +410,14 @@ a {
 .p-headerTitle--creater {
   padding-top: .5rem;
   text-align: center;
+  font-size: 13px;
+  font-size: 4.0625vw;
+}
+
+@media screen and (min-width: 480px) {
+  .p-headerTitle--creater {
+    font-size: 1rem;
+  }
 }
 
 /*
