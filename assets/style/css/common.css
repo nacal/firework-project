@@ -392,7 +392,9 @@ a {
 }
 
 .p-headerTitle--text {
+  text-align: center;
   text-align-last: justify;
+  text-justify: inter-ideograph;
   font-weight: bold;
   font-size: 1.5rem;
 }
