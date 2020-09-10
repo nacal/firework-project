@@ -430,6 +430,12 @@ a {
   text-align: center;
 }
 
+@media screen and (max-height: 500px) {
+  .p-introduction {
+    padding-top: 10rem;
+  }
+}
+
 .p-introduction--title {
   font-weight: bold;
 }
@@ -453,6 +459,12 @@ a {
   .p-introduction--text {
     text-align: center;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .p-introduction--title, .p-introduction--text {
+    display: none;
   }
 }
 
