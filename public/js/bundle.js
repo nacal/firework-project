@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_makeFireworks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/makeFireworks */ \"./src/js/modules/makeFireworks.js\");\n/* harmony import */ var _modules_setVh__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/setVh */ \"./src/js/modules/setVh.js\");\n\n\n\n// let vh = window.innerHeight * 0.01;\n// document.documentElement.style.setProperty('--vh', `${vh}px`);\nObject(_modules_setVh__WEBPACK_IMPORTED_MODULE_1__[\"setVh\"])();\nwindow.addEventListener('resize', () => {\n  Object(_modules_setVh__WEBPACK_IMPORTED_MODULE_1__[\"setVh\"])();\n});\n\nObject(_modules_makeFireworks__WEBPACK_IMPORTED_MODULE_0__[\"makeFireworks\"])(5);\n\n\n//# sourceURL=webpack:///./src/js/firework.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_makeFireworks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/makeFireworks */ \"./src/js/modules/makeFireworks.js\");\n/* harmony import */ var _modules_setVh__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/setVh */ \"./src/js/modules/setVh.js\");\n\n\n\nObject(_modules_setVh__WEBPACK_IMPORTED_MODULE_1__[\"setVh\"])();\nwindow.addEventListener('resize', () => {\n  Object(_modules_setVh__WEBPACK_IMPORTED_MODULE_1__[\"setVh\"])();\n});\n\nObject(_modules_makeFireworks__WEBPACK_IMPORTED_MODULE_0__[\"makeFireworks\"])(5);\n\n\n//# sourceURL=webpack:///./src/js/firework.js?");
 
 /***/ }),
 
