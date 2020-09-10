@@ -13,5 +13,27 @@ module.exports = {
     filename: 'bundle.js',
     // 出力先のパス（絶対パスを指定する必要がある）
     path: path.join(__dirname, 'public/js')
-  }
+  },
+  module: {
+    rules: [
+      {
+        // ローダーの処理対象ファイル
+        test: /\.js$/,
+        // ローダーの処理対象から外すディレクトリ
+        exclude: /node_modules/,
+        use: [
+          {
+            // 利用するローダー
+            loader: 'babel-loader',
+            // ローダーのオプション
+            // 今回はbabel-loaderを利用しているため
+            // babelのオプションを指定しているという認識で問題ない
+            options: {
+              presets: [['@babel/preset-env', { modules: false }]]
+            }
+          }
+        ]
+      }
+    ]
+  },
 };
