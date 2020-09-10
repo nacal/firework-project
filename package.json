@@ -1,0 +1,26 @@
+{
+  "name": "firework-project",
+  "version": "1.0.0",
+  "description": "DEMO<br> https://nkthkr.github.io/firework-project/",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkthkr/firework-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkthkr/firework-project/issues"
+  },
+  "homepage": "https://github.com/nkthkr/firework-project#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {}
+}
