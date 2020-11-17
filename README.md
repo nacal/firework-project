@@ -1,4 +1,3 @@
 # firework-project
 
-DEMO<br>
-https://nkthkr.github.io/firework-project/public
+https://projects.shibajuku.net/fireworks/2020/hikarunakata/
