@@ -2,7 +2,7 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-![DEMO](https://user-images.githubusercontent.com/55532835/108620332-ef015a80-746e-11eb-8d76-74c8e5690112.gif)
+![DEMO](https://user-images.githubusercontent.com/55532835/108620603-87e4a580-7470-11eb-9fa3-a85c048885a0.gif)
 
 > [Shibajuku online hanabi 2020 | hikaru nakata](https://projects.shibajuku.net/fireworks/2020/hikarunakata/)
 
