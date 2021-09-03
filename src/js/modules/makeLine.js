@@ -11,7 +11,7 @@ export const makeLine = () => {
     shape: 'line',
     radius: lineLength(generatePositionY.value),
     scale: 1,
-    angle: 90,
+    rotate: 90,
     stroke: fireworkColorMain(),
     strokeDasharray: '50% 150%',
     strokeDashoffset: { '-100%': '100%' },
